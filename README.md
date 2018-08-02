@@ -5,7 +5,7 @@ With this repo, you will be able to crop, stabilize, and run image-recognition o
 
 ## Downloads needed
 ### Ffmpeg
-Ffmpeg available from https://ffmpeg.org/download.html. If you are on windows, you will just need ffmpeg.exe, which is already in the repo.
+Ffmpeg is available from https://ffmpeg.org/download.html. 
 
 ### Ffmpeg-python
 Ffmpeg-python can be downloaded with pip:
@@ -26,7 +26,10 @@ pip install vidstab[cv2]
 The full documentation for vidstab can be found here:  https://github.com/AdamSpannbauer/python_video_stab
 
 ### Pytorch-Yolov3
-Yolov3, the object detector, is implemented via pytorch and is already included in the repo. The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
+Yolov3, the object detector, is implemented via pytorch and is already included in the repo. The only thing that needs to be downlaoded for this (and put into the yolov3 folder) is the weights file, which can be downloadd here: https://pjreddie.com/media/files/yolov3.weights
+
+
+The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
 
 ## Running
 ### Cropping and Stabilizing
