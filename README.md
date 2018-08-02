@@ -15,7 +15,7 @@ pip install ffmpeg-python
 The full documentation for ffmpeg-python can be found here: https://github.com/kkroening/ffmpeg-python
 
 ### Vidstab
-Vidstab can be installed with pip. If you alerady have opencv installed, then you can use:
+Vidstab can be installed with pip. If you already have opencv installed, then you can use:
 ```
 pip install vidstab
 ```
@@ -26,7 +26,7 @@ pip install vidstab[cv2]
 The full documentation for vidstab can be found here:  https://github.com/AdamSpannbauer/python_video_stab
 
 ### Pytorch-Yolov3
-Yolov3, the object detector, is implimented via pytorch and is already included in the repo. The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
+Yolov3, the object detector, is implemented via pytorch and is already included in the repo. The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
 
 ## Running
 ### Cropping and Stabilizing
@@ -53,3 +53,5 @@ To run object recognition, cd to the pytorch-yolo-v3 folder and run object-rec.p
 python object-rec.py --video inputVideo.avi --outtext outText.txt
 ```
 The --video flag is the input video and the --outtext flag is the output text. Other options exist for the image recognition, use the -h flag for more options.
+
+
