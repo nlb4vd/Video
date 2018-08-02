@@ -26,11 +26,12 @@ pip install vidstab[cv2]
 The full documentation for vidstab can be found here:  https://github.com/AdamSpannbauer/python_video_stab
 
 ### Pytorch-Yolov3
-4. Yolov3, the object detector, is implimented via pytorch and is already included in the repo. The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
+Yolov3, the object detector, is implimented via pytorch and is already included in the repo. The full documentation can be found here: https://github.com/ayooshkathuria/pytorch-yolo-v3
 
 ## Running
 ### Cropping and Stabilizing
 **IMPORTANT NOTE: At least on my machine, stabilization only seems to work when the cropped video file is an mp4 and the stabilized video file is an avi**
+
 To crop and stabilize files, run crop-and-stab.py like so:
 ```
 python crop-and-stab.py --video inputVideo.avi --outcrop croppedVideo.mp4 --outstab stabbedVideo.avi
@@ -39,6 +40,7 @@ The --video flag is the inputted video, the --outcrop flag is the name of the cr
 
 ### Compressing
 **IMPORTANT NOTE: I believe that Smile only runs avi files, so make sure these videos are outputted as an avi**
+
 To compress a file, run compress.py:
 ```
 python compress.py --video inputVideo.avi --outvid outputVideo.avi
