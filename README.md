@@ -53,4 +53,3 @@ To run object recognition, cd to the pytorch-yolo-v3 folder and run object-rec.p
 python object-rec.py --video inputVideo.avi --outtext outText.txt
 ```
 The --video flag is the input video and the --outtext flag is the output text. Other options exist for the image recognition, use the -h flag for more options.
-```
