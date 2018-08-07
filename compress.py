@@ -18,11 +18,14 @@ def arg_parse():
                         type = str)
     return parser.parse_args()
 
-args = arg_parse()
-
-(
-    ffmpeg
-    .input(args.video)
-    .output(args.outvid_name, crf=35 , vcodec='h264')
-    .run()
-)
+def compress(video, outvid_name):
+    (
+        ffmpeg
+        .input(video)
+        .output(outvid_name, crf=35 , vcodec='h264')
+        .run()
+    )
+    
+if __name__=="__main__":
+    args = arg_parse()
+    compress(args.video, args.outvid_name)
