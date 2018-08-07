@@ -33,7 +33,7 @@ The full documentation can be found here: https://github.com/ayooshkathuria/pyto
 
 ## Running
 ### Cropping and Stabilizing
-**IMPORTANT NOTE: At least on my machine, stabilization only seems to work when the cropped video file is an mp4 and the stabilized video file is an avi**
+**IMPORTANT NOTE: Stabilization only seems to work when the cropped video file is an mp4 and the stabilized video file is an avi**
 
 To crop and stabilize files, run crop-and-stab.py like so:
 ```
@@ -42,7 +42,7 @@ python crop-and-stab.py --video inputVideo.avi --outcrop croppedVideo.mp4 --outs
 The --video flag is the inputted video, the --outcrop flag is the name of the cropped file, and the --outstab flag is the name of the cropped and stabilized video.
 
 ### Compressing
-**IMPORTANT NOTE: I believe that Smile only runs avi files, so make sure these videos are outputted as an avi**
+**IMPORTANT NOTE: Smile only runs avi files, so make sure these videos are outputted as an avi**
 
 To compress a file, run compress.py:
 ```
