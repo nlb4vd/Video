@@ -50,6 +50,24 @@ python compress.py --video inputVideo.avi --outvid outputVideo.avi
 ```
 The --video flag is the inputted video and the --ouvid flag is the outputted video.
 
+### Cropping, Stabilizing, and Compressing Folders
+
+To crop, stabilize, and compress entire folders of movies, run folder.py:
+```
+python folder.py --input INPUT, --output OUTPUT, --stab False, --deleteInter True
+```
+The --input flag is the input directory, the --output flag is the output directory, the --stab flag is whether or not you would like to run image stabilization, and the --deleteInter flag is whether or not you would like to delete the intermediate files (recommended)
+
+Note: the format for the input and output files, currently, should be the name of the folder (in the current directory) without a "/" in front of it
+
+### Clipping Videos
+
+To clip video files, run clip.py:
+```
+python clip.py --input inputVideo.avi --output outputVideo.avi --start 60 --end 65
+```
+The --input flag is the input video, the --output flag is the output video, the --start flag is the start time in seconds, and the --end flag is the end time in seconds
+
 ### Object Recognition
 To run object recognition, cd to the pytorch-yolo-v3 folder and run object-rec.py:
 ```
