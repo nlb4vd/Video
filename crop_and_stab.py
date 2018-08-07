@@ -19,27 +19,27 @@ def arg_parse():
                         "Video to crop and stabilize",
                         default = "MOVI009.AVI", type = str)
     parser.add_argument("--outcrop", dest = 'cropvid_name', help =
-                        "Name of the output cropped file", default = "cropped.mp4",
+                        "Name of the output cropped file", default = "cropped2.mp4",
                         type = str)
     parser.add_argument("--outstab", dest = 'stabvid_name', help=
-                        "Name of the output stabilized file", default = "stabbed.avi",
+                        "Name of the output stabilized file", default = "stabbed2.avi",
                         type = str)
     return parser.parse_args()
 
-args = arg_parse()
+def crop(video, cropvid_name):
+    (
+        ffmpeg
+        .input(filename=video)
+        .crop(0,689,1280,689)
+        .output(filename=cropvid_name)
+        .run()
+    )
 
-cropped = args.cropvid_name
-stable = args.stabvid_name
+def stab(cropvid_name, stabvid_name):
+    stabilizer = VidStab()
+    stabilizer.stabilize(input_path=cropvid_name, output_path=stabvid_name)
 
-(
-    ffmpeg
-    .input(filename=args.video)
-    .crop(0,689,1280,689)
-    .output(filename=cropped)
-    .run()
-)
-
-
-# Stabilize
-stabilizer = VidStab()
-stabilizer.stabilize(input_path=cropped, output_path=stable)
+if __name__=="__main__":
+    args = arg_parse()
+    crop(args.video, args.cropvid_name)
+    stab(args.cropvid_name, args.stabvid_name)
