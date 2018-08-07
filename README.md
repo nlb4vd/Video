@@ -1,7 +1,7 @@
 # Video
 
 ## Introduction
-With this repo, you will be able to crop, stabilize, and run image-recognition on videos.
+With this repo, you will be able to crop, stabilize, compress, clip, and run image-recognition on videos.
 
 ## Downloads needed
 ### Ffmpeg
